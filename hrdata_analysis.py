@@ -12,7 +12,7 @@ renaming_columns = {
     'JobInvolvement' : 'Job Participation'
     }
 df.rename(columns=renaming_columns, inplace=True)
-
+df.columns
 df.drop_duplicates(inplace=True)
 print("Eliminating Redundancy entites")
 df.head()
