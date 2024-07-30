@@ -6,10 +6,10 @@ columns_required = ['Age','Department','Education','EmployeeNumber','JobInvolvem
 df = df[columns_required]
 print("Data After removing unnecessary columns")
 df.head()
-
+df = df.copy()
 renaming_columns = {
     'EmployeeNumber': 'Employee Id',
-    'JobInvolvment' : 'Job Participation'
+    'JobInvolvement' : 'Job Participation'
     }
 df.rename(columns=renaming_columns, inplace=True)
 
